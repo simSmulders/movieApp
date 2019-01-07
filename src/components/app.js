@@ -8,6 +8,7 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxPromise from 'redux-promise'
 import reducers from '../reducers';
 import MenuBar from '../containers/menuBar';
+import Featured2 from '../containers/featured2';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
@@ -20,6 +21,7 @@ export default class App extends Component {
           <Route exact path="/" component={SearchBar} />
           <Route exact path="/" component={MovieList} />
           <Route exact path="/featured" component={Featured} />
+          <Route exact path="/featured" component={Featured2} />
         </div>
       </Provider>  
     );
