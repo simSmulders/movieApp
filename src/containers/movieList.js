@@ -10,7 +10,7 @@ class MovieList extends Component {
       window.alert("Title not recognised")
     } else {
         return (
-          <div key={title}>
+          <div key={title} className="container">
             <p>Title: {title}</p>
             <p>Year: {movieData.Year}</p>
             <p>Rated: {movieData.Rated}</p>
@@ -24,7 +24,7 @@ class MovieList extends Component {
             <p>Language: {movieData.Language}</p>
             <p>Awards: {movieData.Awards}</p>
             <p><img src={movieData.Poster} alt={movieData.Poster}/></p>
-            <p>List of ratings: {movieData.Ratings.map(rating => <li key={rating.Value}>{rating.Source} : {rating.Value}</li>)}</p>
+            <div>List of ratings: {movieData.Ratings.map(rating => <li className="list-group-item" key={rating.Value}>{rating.Source} : {rating.Value}</li>)}</div>
             <p>imdbRating: {movieData.imdbRating}</p>
             <p>imdbVotes: {movieData.imdbVotes}</p>
             <p>Type: {movieData.Type}</p>

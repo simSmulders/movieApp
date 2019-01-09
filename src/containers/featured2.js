@@ -21,13 +21,13 @@ export default class Featured2 extends Component {
   render() {
     const film = this.state.movie
     return (
-      <div className="featured-movie">
-        <h1>{film.Title}</h1>
-        <h3>Year: {film.Year}</h3>
-        <h4>Awards: {film.Awards}</h4>
-        <p>Plot: <br /><i>{film.Plot}</i></p>
-        <p><img src={film.Poster} alt={film.Poster}/></p>
-      </div>
+        <div id="featured" className="film2">
+          <h1>{film.Title}</h1>
+          <h3>Year: {film.Year}</h3>
+          <h4>Awards: {film.Awards}</h4>
+          <p>Plot: <br /><i>{film.Plot}</i></p>
+          <p><img src={film.Poster} alt={film.Poster}/></p>
+        </div>
     )
   }
 }
