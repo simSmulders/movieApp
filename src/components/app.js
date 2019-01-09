@@ -16,7 +16,7 @@ export default class App extends Component {
   render() {
     return (
       <Provider store={createStoreWithMiddleware(reducers)}>
-        <div className="App">
+        <div className="container">
           <MenuBar />
           <Route exact path="/" component={SearchBar} />
           <Route exact path="/" component={MovieList} />
