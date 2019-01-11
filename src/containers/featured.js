@@ -14,7 +14,7 @@ export default class Featured extends Component {
   }
   updateMovies(movie) {
     this.setState({
-      movie: movie
+      movie
     })
   }
 

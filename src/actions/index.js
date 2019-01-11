@@ -14,3 +14,15 @@ export function fetchMovie(movie) {
     payload: request
   }
 }
+
+export const FETCH_SHORT = 'FETCH_SHORT';
+
+export function fetchShort(movie) {
+  const URL = `${ROOT_URL}&t=${movie}`
+  const request = axios.get(URL)
+
+  return {
+    type: FETCH_SHORT,
+    payload: request
+  }
+}
