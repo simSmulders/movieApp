@@ -24,10 +24,8 @@ class SearchBar extends Component {
 
     if (this.state.value === 'full') {
       this.props.fetchMovie(this.state.term)
-      // this.setState({ term: '' })
     } else {
       this.props.fetchShort(this.state.term)
-      // this.setState({ term: ''})
     }
   }
 
